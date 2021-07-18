@@ -1,4 +1,4 @@
-<!-- LAST MODIFIED: JULY 15, 2021, 12:14 AM GMT+5:30 -->
+<!-- LAST MODIFIED: JULY 18, 2021, 20:30 GMT+5:30 -->
 <!-- AUTHOR NAME: JISHAN SHAIKH -->
 
 <!DOCTYPE html>
@@ -7,9 +7,23 @@
 		<title>
 			Chess - Jishan Shaikh
 		</title>
+		<style>
+			a {
+				color: green;
+			}
+			body {
+				background-color: white;
+				color: black;
+			}
+			.dark-mode {
+  				background-color: black;
+  				color: white;
+			}
+		</style>
 	</head>
 	
-	<body style="background-color: black;">
+	
+	<body>
 		<!--
 		<details style="color: white; text-align: right;cursor: pointer; " >
 			<summary>
@@ -18,13 +32,13 @@
 			<br>Nah, we don't like Light Mode.
 		</details>-->
 		
-		<h2 style="color: white;">Welcome to everything chess!</h2>
+		<h2>Welcome to everything chess!</h2>
 			
-		<h3 style="color: white;">Jishan Shaikh  &nbsp; <a href="https://github.com/jishanshaikh4" target="_blank" style="color: white;">[GitHub]</a> <a href="https://lichess.org/@/jishanshaikh4" target="_blank" style="color: white;">[Lichess]</a> </h4> 
+		<h3>Jishan Shaikh  &nbsp; <a href="https://github.com/jishanshaikh4" target="_blank">[GitHub]</a> <a href="https://lichess.org/@/jishanshaikh4" target="_blank">[Lichess]</a> </h4> 
 		
 		<div style="margin: 10px;">
 			<details>
-				<summary style="color: white; cursor: pointer;">
+				<summary style="cursor: pointer;">
 					Watch Live Chess Games
 				</summary>
 				<br>
@@ -36,7 +50,7 @@
 		<div style="margin: 10px;">
 			<details>
 				<br>
-				<summary style="color: white; cursor: pointer;">
+				<summary style="cursor: pointer;">
 					Can you solve today's Chess Puzzle?
 				</summary>
 				<iframe src="https://lichess.org/training/frame?theme=brown&bg=dark" style="width: 400px; height: 444px;" allowtransparency="true" frameborder="0">
@@ -46,8 +60,8 @@
 		
 		<div style="margin: 10px;">
 			<details>
-				<summary style="color: white; cursor: pointer;">
-					Some of my notable games including ones with the <a href="https://en.wikipedia.org/wiki/Smothered_mate" target="_blank" style="color: white;">[smothered mate]</a> (@jishanshaikh4) + games with titled players/Masters
+				<summary style="cursor: pointer;">
+					Some of my notable games including ones with the <a href="https://en.wikipedia.org/wiki/Smothered_mate" target="_blank">[smothered mate]</a> (@jishanshaikh4) + games with titled players/Masters
 				</summary>
 				<br>
 				<div style="align: center;">
@@ -74,11 +88,11 @@
 		
 		<div style="margin: 10px;">
 			<details>
-				<summary style="color: white; cursor: pointer;">
+				<summary style="cursor: pointer;">
 					Have some time? Want to go through 27,800+ chess games that I played in the last 3 years?
 				</summary>
-				<p style="color: white;">
-					<a href="https://lichess.org/@/jishanshaikh4/all" target="_blank" style="color: white;">[Click here]</a> browse and enjoy!
+				<p>
+					<a href="https://lichess.org/@/jishanshaikh4/all" target="_blank">[Click here]</a> browse and enjoy!
 				</p>
 	
 			</details>
@@ -86,23 +100,26 @@
 		
 		<div style="margin: 10px;">
 			<details>
-				<summary style="color: white; cursor: pointer;">
+				<summary style="cursor: pointer;">
 					Have some more time? Want to go through 92.1 million+ chess games that were played on lichess.org in June 2021?
 				</summary>
-				<p style="color: white;">
-					<a href="https://database.lichess.org/standard/lichess_db_standard_rated_2021-06.pgn.bz2" target="_blank" style="color: white;">[Click here]</a> to download all the games (Yep, 92.1 million+ games) in a single 25.1 GB file!
+				<p>
+					<a href="https://database.lichess.org/standard/lichess_db_standard_rated_2021-06.pgn.bz2" target="_blank">[Click here]</a> to download all the games (Yep, 92.1 million+ games) in a single 25.1 GB file!
 				</p>
 	
 			</details>
 		</div>
 		
 		
-		<h4 style="color: white;">The source code of this site can be found here at <a href="https://github.com/jishanshaikh4/lichess-games/" target="_blank" style="color: white;">[GitHub].</a> We 🖤 open-source.</h4> 
+		<h4>The source code of this site can be found here at <a href="https://github.com/jishanshaikh4/lichess-games/" target="_blank">[GitHub].</a> We 🖤 open-source.</h4> 
 		
-		<label for="lightmodecheck" style="color: white;">Light Mode:</label> 
-		<input type="checkbox" id="lightmodecheck" onclick="lightcheck()">
-		<p id="spoiler" style="display:none; color: white;">Nah, we don't like light mode here!</p>
+		<!--
+		<label for="lightmodecheck">Light Mode:</label> 
+		<input type="checkbox" id="lightmodecheck" onclick="lightcheck();">
+		<p id="spoiler" style="display:none;">Nah, we don't like light mode here!</p>-->
+		<button onclick="lighter()">Dark mode</button>
 		<script>
+			/*
 			function lightcheck() {
   				var checkBox = document.getElementById("lightmodecheck");
   				var text = document.getElementById("spoiler");
@@ -111,6 +128,12 @@
   				} else {
      				text.style.display = "none";
   				}
+			}
+			*/
+			
+			function lighter() {
+   				var element = document.body;
+   				element.classList.toggle("dark-mode");
 			}
 		</script>
 	</body>
