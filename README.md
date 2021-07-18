@@ -1,5 +1,7 @@
 # Lichess Games
 
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/jishanshaikh4/lichess-games.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/jishanshaikh4/lichess-games/context:javascript)
+
 website:up (https://jishanshaikh4.github.io/lichess-games)
 
 lichess-username:jishanshaikh4 (https://lichess.org/@/jishanshaikh4)
